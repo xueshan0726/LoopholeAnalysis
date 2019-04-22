@@ -26,8 +26,7 @@ and output the result, For example [java -jar LoopholeAnalysis.jar -a].
 5. [-u], and the tool will update the vulnerability library file in [describePath] in the configuration file 
 to the vulnerability database folder [VulnerabilityLibrary], For example [java -jar LoopholeAnalysis.jar -u].  
 
-* **Configuration file loop.properties description**  
-
+* **Configuration file loop.properties description**
 		sourceFolder: the source of the source code to be detected.  
 		Suffixes: the suffix of the file to be detected, separated by ","  
 		fileType: The type of source code to be detected. Currently, only the detection of 
