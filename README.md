@@ -1,14 +1,15 @@
 # LoopholeAnalysis
-###Environment
+### Environment
 Windows  
 jdk1.8  
 jre1.8  
 
-###Feature
+### Feature
 1. Detect possible vulnerabilities in the software source code, and list the description, status, 
 CVSS score and other information of the vulnerability.  
-2. Detect the number and total size of files of the specified type in the software source code.
-###Usage
+2. Detect the number and total size of files of the specified type in the software source code.  
+
+### Usage
 1. Download the source package [LoopholeAnalysis], modify the configuration file [loop.properties], 
 run [LoopholeAnalysis\bin\main.java]; or download [LoopholeAnalysis_run], modify the configuration file 
 [loop.properties], open the terminal to run [LoopholeAnalysis. Jar].  
@@ -52,7 +53,7 @@ of each column in the file are as follows:
 2. When running [-u], **the error [INVALID_SYNTAX_CANNOT_PARSE: Syntax Error, cannot parse description]** 
 is a luence search engine syntax parsing error caused by special characters, which has little effect on the final result.
 
-##What is LoopholeAnalysis
+## What is LoopholeAnalysis
 The tool analyzes the source code of the software. Then compare the version of the dependent software 
 with NVD to get possible vulnerabilities. Help developers fix vulnerabilities in time to improve software 
 security. Currently, only vulnerability analysis of source files for development languages for Java and 
