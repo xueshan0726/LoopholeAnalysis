@@ -27,26 +27,26 @@ and output the result, For example [java -jar LoopholeAnalysis.jar -a].
 to the vulnerability database folder [VulnerabilityLibrary], For example [java -jar LoopholeAnalysis.jar -u].  
 
 * **Configuration file loop.properties description**  
-			sourceFolder: the source of the source code to be detected.  
-			Suffixes: the suffix of the file to be detected, separated by ","  
-			fileType: The type of source code to be detected. Currently, only the detection of 
-			java and python source code is supported.  
-			describePath: path to describe.txt  
-			scorePath: path to score.txt  
+		    sourceFolder: the source of the source code to be detected.  
+		    Suffixes: the suffix of the file to be detected, separated by ","  
+		    fileType: The type of source code to be detected. Currently, only the detection of 
+		    java and python source code is supported.  
+		    describePath: path to describe.txt  
+		    scorePath: path to score.txt  
 * **Generation file description**
-1. The result folder is named [source folder name_Result] and is stored in the same level directory of the detected source folder.  
+    1. The result folder is named [source folder name_Result] and is stored in the same level directory of the detected source folder.  
 
-2. If the development language is [python], the final result file is [FinalResult_python.xlsx], and the contents 
+    2. If the development language is [python], the final result file is [FinalResult_python.xlsx], and the contents 
 of each column in the file are as follows:
 [NVD vulnerability number] [Dependent package name in source file] [Dependent package version in source file] 
 [NVD vulnerability description in the package involved version] [matched version] [NVD vulnerability status] 
 [VND vulnerability description] [CVSS Base Score] [Access Complexity].
 
 * **Others**
-1. When running [-u] or [-a], the [VulnerabilityLibrary] folder will be generated in the folder where 
+    1. When running [-u] or [-a], the [VulnerabilityLibrary] folder will be generated in the folder where 
 [LoopholeAnalysis.jar] is located. This is the vulnerability library folder. Please do not delete it. If you delete this folder, re-run [-u].  
 
-2. When running [-u], **the error [INVALID_SYNTAX_CANNOT_PARSE: Syntax Error, cannot parse description]** 
+    2. When running [-u], **the error [INVALID_SYNTAX_CANNOT_PARSE: Syntax Error, cannot parse description]** 
 is a luence search engine syntax parsing error caused by special characters, which has little effect on the final result.
 
 ## What is LoopholeAnalysis
