@@ -26,13 +26,13 @@ and output the result, For example [java -jar LoopholeAnalysis.jar -a].
 5. [-u], and the tool will update the vulnerability library file in [describePath] in the configuration file 
 to the vulnerability database folder [VulnerabilityLibrary], For example [java -jar LoopholeAnalysis.jar -u].  
 
-* **Configuration file loop.properties description**
-		sourceFolder: the source of the source code to be detected.  
-		Suffixes: the suffix of the file to be detected, separated by ","  
-		fileType: The type of source code to be detected. Currently, only the detection of 
-		java and python source code is supported.  
-		describePath: path to describe.txt  
-		scorePath: path to score.txt  
+* **Configuration file loop.properties description**  
+			sourceFolder: the source of the source code to be detected.  
+			Suffixes: the suffix of the file to be detected, separated by ","  
+			fileType: The type of source code to be detected. Currently, only the detection of 
+			java and python source code is supported.  
+			describePath: path to describe.txt  
+			scorePath: path to score.txt  
 * **Generation file description**
 1. The result folder is named [source folder name_Result] and is stored in the same level directory of the detected source folder.  
 
